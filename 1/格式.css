@@ -1,0 +1,68 @@
+/* 全局重置与页面居中设置 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f0f2f5; /* 柔和的浅灰色背景 */
+    font-family: "PingFang SC", "Microsoft YaHei", sans-serif;
+}
+
+/* 名片卡片核心样式 */
+.card {
+    background-color: #ffffff;
+    width: 320px;
+    padding: 40px 30px;
+    text-align: center;
+    
+    /* 12px 圆角与柔和阴影 */
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    
+    /* 悬停过渡动画设置 */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* 鼠标悬停时的上浮与阴影加深效果 */
+.card:hover {
+    transform: translateY(-8px); /* 向上轻微浮动 */
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.12); /* 阴影扩大加深 */
+}
+
+/* 头像样式 */
+.avatar img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%; /* 实现圆形头像 */
+    object-fit: cover;
+    border: 3px solid #f0f2f5; /* 增加一点边框层次感 */
+    margin-bottom: 20px;
+}
+
+/* 姓名样式 */
+.name {
+    font-size: 22px;
+    color: #333;
+    margin-bottom: 6px;
+    font-weight: 600;
+}
+
+/* 职位样式 */
+.title {
+    font-size: 14px;
+    color: #888;
+    margin-bottom: 25px;
+}
+
+/* 联系方式样式 */
+.contact p {
+    font-size: 13px;
+    color: #666;
+    line-height: 2;
+}
